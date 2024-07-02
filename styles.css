@@ -63,5 +63,25 @@ nav .nav-links a {
     background: #e2e2e2;
 }
 
+/* portfolio section */
+.portfolio {
+    padding: 2rem 0;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.project {
+    flex: 1 1 calc(33.333% - 1rem);
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+
 
 
