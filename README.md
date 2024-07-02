@@ -17,7 +17,7 @@ This is my personal portfolio website showcasing my work, projects, and skills.
 
 - HTML
 - CSS
-- JS *  (to be added)*
+- JS *(to be added)*
 
 ## Getting Started
 
