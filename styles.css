@@ -50,11 +50,18 @@ nav .nav-links a {
 }
 
 /* hero section */
-.hero {
+.hero { 
     background: #f4f4f4;
     color: #333;
     padding: 2rem 0;
     text-align: center;
 }
+
+/* about section */
+.about {
+    padding: 2rem 0;
+    background: #e2e2e2;
+}
+
 
 
