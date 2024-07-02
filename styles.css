@@ -15,3 +15,37 @@ body {
     margin: auto;
     overflow: hidden;
 }
+
+/* nav bar */
+nav {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+nav .nav-links {
+    list-style: none;
+}
+
+nav .nav-links li {
+    display: inline;
+    margin-left: 1rem;
+}
+
+nav .nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
