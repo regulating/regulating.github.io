@@ -4,20 +4,20 @@ This is my personal portfolio website showcasing my work, projects, and skills.
 
 ## Features
 
-- Responsive design (to be added)
+- Responsive design *(to be added)*
 - Navigation bar 
 - Hero section
 - About section
 - Portfolio section
 - Contact form
 - Footer
-- Clean and professional look and feel (to be added)
+- Clean and professional look and feel *(to be added)*
 
 ## Technologies Used
 
 - HTML
 - CSS
-- JS (to be added)
+- JS *  (to be added)*
 
 ## Getting Started
 
