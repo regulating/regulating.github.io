@@ -49,3 +49,12 @@ nav .nav-links a {
     text-decoration: none;
 }
 
+/* hero s                   ection */
+.hero {
+    background: #f4f4f4;
+    color: #333;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+
