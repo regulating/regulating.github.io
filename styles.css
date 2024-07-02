@@ -82,6 +82,37 @@ nav .nav-links a {
     text-align: center;
 }
 
+/* contact section */
+.contact {
+    padding: 2rem 0;
+    background: #e2e2e2;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact label {
+    font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+}
+
+.contact button {
+    padding: 0.5rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
 
 
 
