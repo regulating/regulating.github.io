@@ -35,10 +35,10 @@ To view the website locally:
 
 ## File Structure
 
-/my-github-website
-├── index.html # The main HTML file
-├── styles.css # The main CSS file
-└── README.md # This README file
+/my-github-website\\\
+├── index.html # The main HTML file\\\
+├── styles.css # The main CSS file\\\
+└── README.md # This README file\\
 
 
 ## License
