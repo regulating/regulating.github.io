@@ -13,7 +13,7 @@ portfolio.display();`;
         if (index < typingText.length) {
             document.querySelector('.typing-animation').textContent += typingText.charAt(index);
             index++;
-            setTimeout(type, 100);                                  
+            setTimeout(type, 100);
         }
     }
     setTimeout(type, 3500); 

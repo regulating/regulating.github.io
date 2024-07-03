@@ -1,23 +1,23 @@
 # My Portfolio Website
 
-This is my personal portfolio website showcasing my work, projects, and skills.
+This repository hosts my personal portfolio website, showcasing my work, projects, and skills.
 
-## Features
+## Key Features
 
-- Responsive design *(to be added)*
-- Navigation bar 
-- Hero section
-- About section
-- Portfolio section
-- Contact form
-- Footer
-- Clean and professional look and feel *(to be added)*
+- **Responsive Design**: Ensures optimal viewing experience across various devices.
+- **Navigation Bar**: Provides easy access to different sections of the website.
+- **Hero Section**: Engaging introduction to capture visitors' attention.
+- **About Section**: Detailed information about myself and my background.
+- **Portfolio Section**: Showcase of my projects with descriptions and links.
+- **Contact Form**: Allows visitors to easily reach out to me.
+- **Footer**: Contains essential links and information at the bottom of each page.
+- **Clean and Professional Look and Feel**: Emphasizing simplicity and professionalism throughout.
 
 ## Technologies Used
 
 - HTML
 - CSS
-- JS *(to be added)*
+- JavaScript *(beta)*
 
 ## Getting Started
 
@@ -33,14 +33,22 @@ To view the website locally:
     ```
 3. Open the `index.html` file in your web browser.
 
+## Future Improvements
+
+- Implement responsive design for mobile devices.
+- Enhance visual appeal with animations and transitions.
+- Integrate JavaScript functionality for interactive elements.
+
+
 ## File Structure
 
-/my-github-website\\\
-├── index.html # The main HTML file\\\
-├── styles.css # The main CSS file\\\
-└── README.md # This README file\\
-
+```markdown
+/my-github-website/
+├── index.html     # The main HTML file
+├── styles.css     # The main CSS file
+└── README.md      # This README file
+```
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
