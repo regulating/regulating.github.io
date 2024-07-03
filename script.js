@@ -1,4 +1,6 @@
 window.addEventListener('load', function () {
-    const loadingScreen = document.getElementById('loading-screen');
-    loadingScreen.style.display = 'none';
+    setTimeout(function () {
+        const loadingScreen = document.getElementById('loading-screen');
+        loadingScreen.style.display = 'none';
+    }, 1500); // 1.5 sec
 });
