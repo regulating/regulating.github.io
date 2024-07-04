@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
         loadingScreen.classList.add('hidden');
     }, 1500);
 
-
     const typingText = `const portfolio = new Portfolio();
 portfolio.display();`;
 
@@ -16,5 +15,5 @@ portfolio.display();`;
             setTimeout(type, 100);
         }
     }
-    setTimeout(type, 3500); 
+    setTimeout(type, 3500);
 });
