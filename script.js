@@ -1,19 +1,24 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const loadingScreen = document.getElementById('loading-screen');
-    setTimeout(() => {
-        loadingScreen.classList.add('hidden');
-    }, 1500);
+document.addEventListener("DOMContentLoaded", function () {
+    // loading screen
+    setTimeout(function () {
+        document.getElementById("loading-screen").style.display = "none";
+    }, 2000); // timeout duration
 
-    const typingText = `const portfolio = new Portfolio();
-portfolio.display();`;
-
+    // typing animation
+    const typingAnimation = document.querySelector(".typing-animation");
+    const text = "Music Producer & DJ | Full-   Stack Developer | Open Source Contributor";
     let index = 0;
+
     function type() {
-        if (index < typingText.length) {
-            document.querySelector('.typing-animation').textContent += typingText.charAt(index);
-            index++;
+        typingAnimation.textContent = text.slice(0, index);
+        index++;
+        if (index <= text.length) {
             setTimeout(type, 100);
+        } else {
+            index = 0;
+            setTimeout(type, 3000); 
         }
     }
-    setTimeout(type, 3500);
+
+    type();
 });
