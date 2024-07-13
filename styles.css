@@ -5,224 +5,148 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
-    background-color: #121212;
-    color: #e0e0e0;
-}
-
-/* container */
-.container {
-    width: 80%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-}
-
-/* nav bar */
-nav {
-    background: linear-gradient(45deg, #1f1f1f, #333);
-    color: #fff;
-    padding: 1rem 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-nav .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav .logo a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-nav .nav-links {
-    list-style: none;
-}
-
-nav .nav-links li {
-    display: inline;
-    margin-left: 1rem;
-}
-
-nav .nav-links a {
-    color: #fff;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    transition: background 0.3s;
-}
-
-nav .nav-links a:hover {
-    background: #333;
-    border-radius: 5px;
+    background: linear-gradient(to right, #000d1a 30%, #1a2d44 90%);
+    color: #ffffff; /* white text */
+    padding-top: 2rem; /* add padding to move everything down */
 }
 
 /* hero section */
 .hero {
-    background: linear-gradient(135deg, #6c63ff, #111040);
-    color: #fff;
-    padding: 4rem 0;
-    text-align: center;
+    background: transparent;
+    color: #ffffff; /* white text */
+    padding: 4rem 2rem;
     margin-bottom: 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 100vh; /* ensure the hero section covers at least the full viewport height */
+}
+
+.hero-content {
+    margin-bottom: 2rem;
+    text-align: left;
+    margin-left: 4rem;
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-weight: 700;
     animation: fadeIn 2s ease-in;
 }
 
 .hero p {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     animation: fadeIn 3s ease-in;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
 /* animated text */
-.code-typing {
-    font-family: 'Courier New', Courier, monospace;
-    color: #fff;
-    margin-top: 2rem;
+.dynamic-text {
+    color: #ffeb3b; /* bright yellow for animated text to stand out */
+    border-bottom: 2px solid #ffeb3b;
 }
 
-.typing-animation {
-    font-size: 1.25rem;
-    border-right: 2px solid #fff;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typing 3.5s steps(40, end) infinite, blink 0.75s step-end infinite;
-}
-
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-}
-
-@keyframes blink {
-    from, to { border-color: transparent; }
-    50% { border-color: #fff; }
-}
-
-/* about section */
-.about {
-    padding: 2rem 0;
-    background: linear-gradient(135deg, #1f1f1f, #2a2a2a);
+/* nav bar */
+nav {
+    margin-left: 4rem;
     margin-bottom: 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
 }
 
-/* portfolio section */
-.portfolio {
-    padding: 2rem 0;
-    margin-bottom: 2rem;
-    background: linear-gradient(135deg, #1f1f1f, #2a2a2a);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-.projects {
+.nav-links {
+    list-style: none;
     display: flex;
-    flex-wrap: wrap;
     gap: 1rem;
 }
 
-.project {
-    flex: 1 1 calc(33.333% - 1rem);
-    background: linear-gradient(135deg, #262626, #333);
-    padding: 1rem;
-    border: 1px solid #333;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+.nav-links li {
+    display: inline;
 }
 
-.project:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-}
-
-.project h3 {
-    margin-bottom: 1rem;
-    font-size: 1.25rem;
-    color: #6c63ff;
-}
-
-.project p {
-    font-size: 1rem;
-}
-
-/* contact section */
-.contact {
-    padding: 2rem 0;
-    background: linear-gradient(135deg, #1f1f1f, #2a2a2a);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    text-align: center;
-}
-
-.contact a {
-    color: #6c63ff;
+.nav-links a {
+    color: #ffffff; /* white text */
     text-decoration: none;
-    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+    font-weight: 500;
 }
 
-.contact a:hover {
-    text-decoration: underline;
+.nav-links a.active, .nav-links a:hover {
+    color: #ffeb3b; /* bright yellow for hover effect */
+    border-bottom: 2px solid #ffeb3b;
+}
+
+/* social icons */
+.social-icons {
+    margin-left: 4rem;
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #333; /* dark background for circles */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
 }
 
 /* footer */
 footer {
-    background: linear-gradient(45deg, #1f1f1f, #333);
-    color: #fff;
-    text-align: center;
     padding: 1rem 0;
-    margin-top: 2rem;
+    text-align: center;
+    background: #1f1f1f;
+    color: #ffffff; /* white text */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin-top: 2rem; /* move the footer down */
 }
 
-footer p {
-    margin: 0;
-}
-
-/* smooth scrolling */
-html {
-    scroll-behavior: smooth;
-}
-
-/* loading screen */
+/* loader */
 #loading-screen {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #121212;
+    background-color: #121212;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    opacity: 1;
+    transition: opacity 0.5s;
 }
 
 .loader {
-    border: 16px solid #f3f3f3;
-    border-top: 16px solid #6c63ff;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #6c63ff;
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }

@@ -3,96 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">           
-    <link rel="icon" href="img/favicon.ico">
+    <title>xald - Portfolio</title>
 </head>
 <body>
-    <!-- loading screen -->
+    <div class="hero" id="home">
+        <div class="hero-content">
+            <h1>Jay Fitzgerald</h1>
+            <p class="typing-animation">I'm a <span class="dynamic-text"></span></p>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="#" class="social-icon"><img src="img/linkedin.svg" alt="LinkedIn"></a>
+            <a href="#" class="social-icon"><img src="img/github.svg" alt="GitHub"></a>
+            <a href="#" class="social-icon"><img src="img/mail.svg" alt="Google"></a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Jay Fitzgerald. All rights reserved.</p>
+    </footer>
+
     <div id="loading-screen">
         <div class="loader"></div>
     </div>
 
-    <!-- nav bar -->
-    <nav>
-        <div class="container">
-            <div class="logo"><a href="#">Jay Fitzgerald</a></div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- hero section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <h1>My Portfolio</h1>
-            <p class="typing-animation"></p>
-        </div>
-    </section>
-
-    <!-- about section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>👋 Hey there! I'm Jay, a passionate full-stack developer, Music Producer 🎧, and DJ 🎵 on a mission to blend creativity with technology. Currently pursuing a Level 3 Extended Diploma in Computing, with ambitions to dive deeper into Cyber Security at degree level. 💻🔒</p>
-        </div>
-    </section>
-
-    <!-- portfolio section -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="projects">
-                <div class="project">
-                    <h3>Project Title 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="project">
-                    <h3>Project Title 2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="project">
-                    <h3>Project Title 3</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="project">
-                    <h3>Project Title 4</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="project">
-                    <h3>Project Title 5</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="project">
-                    <h3>Project Title 6</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- contact section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>You can reach me via email at <a href="mailto:djayfitz11@gmail.com">DJayFitz11@gmail.com</a></p>
-        </div>
-    </section>
-
-    <!-- footer -->
-    <footer>    
-        <div class="container">
-            <p>&copy; 2024 Jay Fitzgerald. All Rights Reserved.</p>     
-        </div>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="script.js"></script>
 </body>
 </html>

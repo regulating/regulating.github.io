@@ -12,12 +12,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 2000); // timeout duration
 
     // Initialize Typed.js
-    new Typed('.typing-animation', {
-        strings: ["Music Producer & DJ", "Full-Stack Developer", "Open Source Contributor"],
+    new Typed('.dynamic-text', {
+        strings: ["Developer", "Designer", "Coder"],
         typeSpeed: 100,
         backSpeed: 50,
         backDelay: 2000,
         startDelay: 1000,
-        loop: true
+        loop: true,
+        showCursor: true,
+        cursorChar: '|',  // Define the cursor character
     });
 });
