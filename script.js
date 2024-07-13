@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Initialize Typed.js
     new Typed('.dynamic-text', {
-        strings: ["Developer", "Designer", "Coder"],
+        strings: ["Developer", "Designer", "DJ"],
         typeSpeed: 100,
         backSpeed: 50,
         backDelay: 2000,
@@ -23,3 +23,4 @@ document.addEventListener("DOMContentLoaded", function () {
         cursorChar: '|',  // Define the cursor character
     });
 });
+    
