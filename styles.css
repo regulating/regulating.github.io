@@ -77,7 +77,6 @@ nav {
 
 .nav-links a.active, .nav-links a:hover {
     color: #ffeb3b; /* bright yellow for hover effect */
-    border-bottom: 2px solid #ffeb3b;
 }
 
 /* social icons */
@@ -149,4 +148,121 @@ footer {
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+/* navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0; /* remove margin */
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #f5f5f5;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-links li {
+    position: relative;
+}
+
+.navbar .nav-links a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+    position: relative;
+}
+
+.navbar .nav-links a.active {
+    color: #ffd700;  /* change active link color to yellow */
+}
+
+.navbar .nav-links a.active::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffd700;  /* change underline color to yellow */
+}
+
+.navbar .nav-links a:hover {
+    color: #ffd700;  /* hover color change */
+}
+
+/* about section styles */
+.about-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-section .about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-section .profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about-section .about-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-section .contact-info {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.about-section .contact-info li {
+    margin-bottom: 10px;
+}
+
+/* interests section styles */
+.interests-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.interests-section .interests-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.interests-section .interest-item {
+    background-color: #1e215d;
+    color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.interests-section .interest-item:hover {
+    background-color: #ffd700;
+    color: #000;
 }
