@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     new Typed('.dynamic-text', {
         strings: ["Developer", "Designer", "DJ"],
         typeSpeed: 100,
-        backSpeed: 50,
+        backSpeed: 50,  
         backDelay: 2000,
         startDelay: 1000,
         loop: true,
@@ -23,4 +23,21 @@ document.addEventListener("DOMContentLoaded", function () {
         cursorChar: '|',  // Define the cursor character
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the current page URL
+    const currentPage = window.location.href;
+
+    // Get all nav links
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    // Loop through each link
+    navLinks.forEach(function(link) {
+        // Check if the link's href matches the current page URL
+        if (link.href === currentPage) {
+            link.classList.add('active'); // Add active class to the matching link
+        }
+    });
+});
+
     

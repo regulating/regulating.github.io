@@ -1,5 +1,4 @@
 /* base styles */
-
 * {
     margin: 0;
     padding: 0;
@@ -47,6 +46,11 @@ body {
     animation: fadeIn 3s ease-in;
 }
 
+.yellow-underline {
+    text-decoration: underline;
+    color: #ffd700;
+}
+    
 .nav-links {
     list-style: none;
     display: flex;
@@ -62,13 +66,29 @@ body {
 .nav-links a {
     color: #ffffff;
     text-decoration: none;
+    font-size: 1em;
+    position: relative;
     padding: 0.5rem 1rem;
     transition: background 0.3s;
     font-weight: 500;
 }
 
-.nav-links a.active, .nav-links a:hover {
-    color: #ffeb3b;
+.nav-links a.active {
+    color: #ffd700;  /* change active link color to yellow */
+}
+
+.nav-links a.active::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffd700;  /* change underline color to yellow */
+}
+
+.nav-links a:hover {
+    color: #ffd700;  /* hover color change */
 }
 
 .social-icons {
@@ -165,6 +185,7 @@ footer {
         font-size: 1.2rem;
     }
 }
+
 
 
 /* navbar styles */
@@ -282,4 +303,4 @@ footer {
 .interests-section .interest-item:hover {
     background-color: #ffd700;
     color: #000;
-}
+}   
