@@ -17,6 +17,7 @@ body {
     background: linear-gradient(to right, #000d1a 30%, #1a2d44 90%);
     color: #ffffff;
     padding-top: 2rem;
+    overflow-x: hidden;
 }
 
 .hero {
@@ -260,21 +261,35 @@ footer {
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.about-section .profile-picture:hover {
+    transform: scale(1.1);
 }
 
 .about-section .about-text {
     max-width: 600px;
-    text-align: left;
+}
+
+.about-section .about-text p {
+    font-size: 1.1em;
+    line-height: 1.6;
 }
 
 .about-section .contact-info {
     list-style: none;
     padding: 0;
-    margin-top: 20px;
+    margin: 20px 0 0;
+    text-align: left;
 }
 
 .about-section .contact-info li {
     margin-bottom: 10px;
+}
+
+.about-section .contact-info strong {
+    color: #ffd700;  /* make labels yellow */
 }
 
 /* interests section styles */
@@ -285,22 +300,47 @@ footer {
 
 .interests-section .interests-grid {
     display: flex;
-    justify-content: center;
-    gap: 20px;
     flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .interests-section .interest-item {
-    background-color: #1e215d;
+    background-color: #333;
     color: #f5f5f5;
-    padding: 20px;
-    border-radius: 5px;
-    width: 200px;
-    text-align: center;
+    padding: 10px 20px;
+    border-radius: 20px;
     transition: background-color 0.3s;
 }
 
 .interests-section .interest-item:hover {
-    background-color: #ffd700;
-    color: #000;
-}   
+    background-color: #6c63ff;
+}
+
+/* section title styles */
+.section-title {
+    font-size: 2em;
+    color: #ffd700;  /* change title color to yellow */
+    margin-bottom: 20px;
+}
+
+/* responsive adjustments */
+@media (max-width: 768px) {
+    .about-section .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .about-section .profile-picture {
+        margin-bottom: 20px;
+    }
+    
+    .about-section .about-text {
+        text-align: center;
+    }
+    
+    .interests-section .interests-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
