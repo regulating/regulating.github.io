@@ -1,47 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="img/favicon.png" type="image/png">
     <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div class="hero" id="home">
-        <div class="hero-content">
-            <h1>Jay Fitzgerald</h1>
-            <p class="typing-animation">I'm a <span class="dynamic-text yellow-underline">  </p>
-        </div>
+    <!-- nav bar -->
+    <header>
         <nav>
+            <div class="logo">Jay</div>
             <ul class="nav-links">
-                <li><a href="index.html" id="home-link" class="active">Home</a></li>
-                <li><a href="about.html" id="about-link">About</a></li>
-                <li><a href="#education" id="education-link">Education</a></li>
-                <li><a href="#experience" id="experience-link">Experience</a></li>
-                <li><a href="#projects" id="projects-link">Projects</a></li>       
-                <li><a href="#skills" id="skills-link">Skills</a></li>
-                <li><a href="#resume" id="resume-link">Resume</a></li>
-                <li><a href="#contact" id="contact-link">Contact</a></li>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="social-icons">
-            <a href="#" class="social-icon"><img src="img/linkedin.svg" alt="LinkedIn"></a>
-            <a href="#" class="social-icon"><img src="img/github.svg" alt="GitHub"></a>
-            <a href="#" class="social-icon"><img src="img/mail.svg" alt="Google"></a>
+    </header>
+
+    <!-- main section -->
+    <section id="home" class="main-section">
+        <div class="content">
+            <h1>Hi, <br> I'm <span class="highlight">Jay</span><br>typing text</h1>
+            <button class="contact-btn">Contact</button>
+            <div class="social-icons">
+                <a href="#" class="icon-link">linkedin</a>
+                <a href="#" class="icon-link">email</a>
+                <a href="#" class="icon-link">github</a>
+            </div>
         </div>
-    </div>
+        <div class="image-container">
+            <img src="/img/myself.jpg" alt="Jay">
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2024 Jay Fitzgerald. All rights reserved.</p>
-    </footer>
-
-    <div id="loading-screen">
-        <div class="loader"></div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- link to js file -->
     <script src="script.js"></script>
 </body>
+
 </html>
