@@ -29,23 +29,199 @@ h1 {
     height: 1.5em;
 }
 
-.icons {
+.container .icons {
     margin: 20px 0;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
     gap: 20px;
 }
 
-.icons a {
-    margin: 0 10px;
+.container .icons a {
     color: white;
     font-size: 2em;
     transition: color 0.3s, transform 0.3s;
+    text-decoration: none; /* Remove default underline */
+    position: relative;
 }
 
-.icons a:hover {
+.container .icons a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.container .icons a:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.container .icons img.icon {
+    width: 32px; /* Adjust size as needed */
+    height: 32px; /* Adjust size as needed */
+    vertical-align: middle;
+}
+
+.container .icons a.mail-icon {
+    margin-left: -10px; /* Adjust this value as needed to move the icon to the left */
+}
+
+.subtitle {
+    font-size: 1.5em;
+    margin: 10px 0 30px;
+    height: 1.5em;
+}
+
+.container .icons {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    gap: 10px;
+}
+
+.container .icons h1 {
+    font-size: 4em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.subtitle {
+    font-size: 1.5em;
+    margin: 10px 0 30px;
+    height: 1.5em;
+}
+
+.container .icons a {
+    color: white;
+    font-size: 2em;
+    transition: color 0.3s, transform 0.3s;
+    text-decoration: none; /* Remove default underline */
+    position: relative;
+}
+
+.container .icons a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.container .icons a:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.container .icons img.icon {
+    width: 32px; /* Adjust size as needed */
+    height: 32px; /* Adjust size as needed */
+    vertical-align: middle;
+}
+
+.container .icons a.mail-icon {
+    margin-left: -10px; /* Adjust this value as needed to move the icon to the left */
+}
+
+.nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #ddd;
+}
+
+.arrow {
+    margin-top: 20px;
+}
+
+.arrow a {
+    color: white;
+    font-size: 2em;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.arrow a:hover {
     color: #ddd;
     transform: scale(1.1);
+}
+
+.story-section {
+    background: white;
+    color: black;
+    padding: 50px;
+    text-align: center;
+}
+
+.story-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    margin-bottom: 20px;
+    width: 150px; /* Set width to 150px */
+    height: 150px; /* Set height to 150px */
+}
+
+.story-section p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* responsive styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    .subtitle {
+        font-size: 1.2em;
+    }
+
+    .icons a {
+        font-size: 1.5em;
+    }
+
+    .nav a {
+        font-size: 1em;
+    }
+
+    .arrow a {
+        font-size: 1.5em;
+    }
+
+    .story-section h2 {
+        font-size: 1.5em;
+    }
+
+    .story-section img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .story-section h2 {
+        font-size: 1.5em;
+    }
 }
 
 .nav a {
