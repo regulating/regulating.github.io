@@ -1,46 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>Jay Fitz - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.14.0/devicon.min.css">
 </head>
-
 <body>
-    <!-- nav bar -->
-    <header>
-        <nav>
-            <div class="logo">Jay</div>
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- main section -->
-    <section id="home" class="main-section">
-        <div class="content">
-            <h1>Hi, <br> I'm <span class="highlight">Jay</span><br>typing text</h1>
-            <button class="contact-btn">Contact</button>
-            <div class="social-icons">
-                <a href="#" class="icon-link">linkedin</a>
-                <a href="#" class="icon-link">email</a>
-                <a href="#" class="icon-link">github</a>
-            </div>
+    <section id="main" class="container">
+        <h1>Jay Fitz</h1>
+        <p class="subtitle"><span id="typed"></span></p>
+        <div class="icons">
+            <a href="https://www.linkedin.com" target="_blank" class="icon-link"><i class="devicon-linkedin-plain"></i></a>
+            <a href="https://github.com" target="_blank" class="icon-link"><i class="devicon-github-original"></i></a>
+            <a href="resume.pdf" target="_blank" class="icon-link"><i class="devicon-file-pdf"></i></a>
+            <a href="mailto:example@example.com" class="icon-link"><i class="devicon-mail-plain"></i></a>
         </div>
-        <div class="image-container">
-            <img src="/img/myself.jpg" alt="Jay">
+        <div class="nav">
+            <a href="#about" class="nav-link">About Me</a>
+            <a href="#projects" class="nav-link">Projects</a>
+        </div>
+        <div class="arrow">
+            <a href="#mystory" class="arrow-link"><i class="devicon-arrow-down"></i></a>
         </div>
     </section>
 
-    <!-- link to js file -->
+    <section id="mystory" class="story-section">
+        <h2>My Story</h2>
+        <img src="img/myself.jpg" alt="Profile Picture" class="profile-pic">
+        <p>I am a junior in the College of Information and Computer Sciences at the University of Massachusetts Amherst, pursuing an undergraduate degree. I am majoring in Computer Science, with intent to double major in Mathematics with Statistics and Data Science concentration. I'm involved as a Software Developer for BUILD UMass, where I use my software engineering skills for pro-bono app/web development and tech consulting for the Amherst community. I also serve as a Designer for the HackUMass Organizing Team, responsible for graphics design and production for the annual hackathon. I am interested in exploring the fields of Software Engineering, Data Science, and Machine Learning, and I am open to opportunities for the same.</p>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="script.js"></script>
 </body>
-
 </html>

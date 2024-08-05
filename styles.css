@@ -1,112 +1,136 @@
-/* reset some default styles */
-body, h1, ul, li, a, button {
+body, html {
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-}
-
-/* style the body */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #fff;
-    color: #000;
-    text-align: center;
-}
-
-/* style the header */
-header {
-    padding: 20px;
-    background-color: #fff;
-    border-bottom: 1px solid #eee;
-    position: sticky;
-    top: 0;
     width: 100%;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6e45e2, #88d3ce);
+}
+
+.container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    margin-left: 20px;
-}
-
-.nav-links {
-    display: flex;
-    gap: 20px;
-    margin-right: 20px;
-}
-
-.nav-links a {
-    color: #000;
-    font-size: 16px;
-}
-
-.nav-links a.active {
-    color: #007bff;
-}
-
-/* main section styling */
-.main-section {
-    display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 70px);
-    padding: 20px;
-}
-
-.content {
-    max-width: 600px;
-    margin-right: 40px;
+    height: 100vh;
+    text-align: center;
+    color: white;
 }
 
 h1 {
-    font-size: 48px;
-    line-height: 1.2;
+    font-size: 4em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.highlight {
-    color: #007bff;
+.subtitle {
+    font-size: 1.5em;
+    margin: 10px 0 30px;
+    height: 1.5em;
 }
 
-.contact-btn {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
+.icons {
     margin: 20px 0;
-}
-
-.social-icons {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
 }
 
-.icon-link {
-    font-size: 24px;
-    color: #000;
+.icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 2em;
+    transition: color 0.3s, transform 0.3s;
 }
 
-.image-container {
+.icons a:hover {
+    color: #ddd;
+    transform: scale(1.1);
+}
+
+.nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #ddd;
+}
+
+.arrow {
+    margin-top: 20px;
+}
+
+.arrow a {
+    color: white;
+    font-size: 2em;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.arrow a:hover {
+    color: #ddd;
+    transform: scale(1.1);
+}
+
+.story-section {
+    background: white;
+    color: black;
+    padding: 50px;
+    text-align: center;
+}
+
+.story-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
     border-radius: 50%;
-    overflow: hidden;
-    background-color: #007bff;
-    width: 250px;
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 20px;
 }
 
-.image-container img {
-    width: 100%;
-    height: auto;
+.story-section p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* responsive styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    .subtitle {
+        font-size: 1.2em;
+    }
+
+    .icons a {
+        font-size: 1.5em;
+    }
+
+    .nav a {
+        font-size: 1em;
+    }
+
+    .arrow a {
+        font-size: 1.5em;
+    }
+
+    .story-section h2 {
+        font-size: 1.5em;
+    }
+
+    .story-section img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .story-section h2 {
+        font-size: 1.5em;
+    }
 }
