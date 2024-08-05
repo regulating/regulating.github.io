@@ -8,16 +8,16 @@ This repository hosts my personal portfolio website, showcasing my work, project
 - **Navigation Bar**: Provides easy access to different sections of the website.
 - **Hero Section**: Engaging introduction to capture visitors' attention.
 - **About Section**: Detailed information about myself and my background.
-- **Portfolio Section**: Showcase of my projects with descriptions and links.
-- **Contact Form**: Allows visitors to easily reach out to me.
-- **Footer**: Contains essential links and information at the bottom of each page.
+- **Portfolio Section**: Showcase of my projects with descriptions and links. *(SOON)*
+- **Social Media Links**: Allows visitors to easily reach out to me.
+- **Footer**: Contains essential links and information at the bottom of each page. *(SOON)*
 - **Clean and Professional Look and Feel**: Emphasizing simplicity and professionalism throughout.
 
 ## Technologies Used
 
 - HTML
 - CSS
-- JavaScript *(beta)*
+- JavaScript
 
 ## Getting Started
 
@@ -44,9 +44,11 @@ To view the website locally:
 
 ```markdown
 /my-github-website/
-├── index.html     # The main HTML file
-├── styles.css     # The main CSS file
-└── README.md      # This README file
+├──── img   # Images Folder
+├── index.html  # The main HTML file
+├── script.js # The main JavaScript file
+├── styles.css  # The main CSS file
+└── README.md   # This README file
 ```
 
 ## License
