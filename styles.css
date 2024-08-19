@@ -1,4 +1,3 @@
-
 body, html {
     margin: 0;
     padding: 0;
@@ -7,7 +6,6 @@ body, html {
     font-family: 'Source Code Pro', sans-serif;
 }
 
-/* Fullscreen Gradient Background */
 #main {
     background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%); 
     height: 100vh;
@@ -20,7 +18,7 @@ body, html {
 }
 
 .container {
-    text-align: center; /* Center text and elements inside the container */
+    text-align: center;
 }
 
 h1 {
@@ -48,12 +46,12 @@ h1 {
 }
 
 .container .icons a {
-    background: transparent; /* Ensure background is transparent */
-    border: none;            /* Remove any borders */
-    padding: 0;              /* Remove any padding */
-    box-shadow: none;        /* Remove any box shadows */
-    display: inline-block;   /* Ensure the element behaves as an inline-block */
-    color: white;            /* Keep the text color white (if it was set elsewhere) */
+    background: transparent;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+    display: inline-block;
+    color: white;
 }
 
 
@@ -93,7 +91,6 @@ h1 {
     color: #ddd;
 }
 
-/* Bouncing Arrow Animation */
 .arrow {
     margin-top: 40px;
     background: transparent;
@@ -120,7 +117,6 @@ h1 {
     }
 }
 
-/* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
 }
@@ -129,12 +125,12 @@ html {
     background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
     height: 500px;
     position: relative;
-    margin-top: -100px; /* Remove negative margin to prevent overlapping */
+    margin-top: -100px;
 }
 
 .profile-img {
     position: absolute;
-    bottom: -60px; /* Adjusted to ensure the arrow can be placed right below */
+    bottom: -60px;
     left: 50%;
     transform: translateX(-50%);
     width: 250px;
@@ -149,7 +145,6 @@ html {
     height: auto;
 }
 
-/* Main Content */
 main {
     padding: 80px 20px 20px 20px;
     text-align: center;
@@ -184,12 +179,12 @@ section div {
 
 #contact input,
 #contact textarea {
-    width: 48.6vw; /* Set the width to 100% of the viewport width */
+    width: 48.6vw;
     padding: 10px;
     font-size: 14px;
     border: 1px solid #ddd;
-    margin: 0 auto; /* Center the input and textarea horizontally */
-    margin-left: -100px; /* Add a left margin of 10px */
+    margin: 0 auto;
+    margin-left: -100px;
 }
 
 #contact textarea {
@@ -213,7 +208,6 @@ section div {
     background-color: #2994c1;
 }
 
-/* Footer */
 footer {
     text-align: center;
     font-size: 12px;
@@ -227,3 +221,4 @@ footer a {
     color: #33c3f0;
     text-decoration: none;
 }
+
