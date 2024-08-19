@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jay Fitz - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.png" type="image/png" />
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.14.0/devicon.min.css">
 </head>
 <body>
+
+    <!-- First Section with Gradient Background -->
     <section id="main" class="container">
-        <h1>Jay Fitz</h1>
+        <h1>Jay Fitzgerald</h1>
         <p class="subtitle"><span id="typed"></span></p>
         <div class="icons">
             <a href="https://www.linkedin.com/in/jay-fitz-a3795a321">
@@ -30,18 +35,43 @@
             <a href="#projects" class="nav-link">Projects</a>
         </div>
         <div class="arrow">
-            <a href="#mystory" class="arrow-link"><i class="devicon-arrow-down"></i></a>
+            <a href="#about" class="arrow-link">
+                <img src="img/down-arrow.png" alt="Down Arrow">
+            </a>
         </div>
     </section>
+    <header>
+        <div class="header-bg">
+            <div class="profile-img">
+                <img src="/img/myself.jpg" alt="Jay Fitzgerald">
+            </div>
+        </div>
+    </header>
 
-    <section id="mystory" class="story-section">
-        <h2>My Story</h2>
-        <img src="img/myself.jpg" alt="Profile Picture" class="profile-pic">
-        <p>👋 Hey there! I'm Jay, a passionate full-stack developer, Music Producer 🎧, and DJ 🎵 on a mission to blend creativity with technology. Currently pursuing a Level 3 Extended Diploma in Computing, with ambitions to dive deeper into Cyber Security at degree level. 💻🔒</p>
-    </section>
+    <main>
+        <section id="about">
+            <div>👋 Hey there! I'm <strong>Jay</strong>, a passionate full-stack developer, Music Producer 🎧, and DJ 🎵 on a mission to blend creativity with technology. Currently pursuing a Level 3 Extended Diploma in Computing, with ambitions to dive deeper into Cyber Security at degree level. 💻🔒</div>
+        </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="script.js"></script>
+        <section id="works">
+            <!-- Add your works content here -->
+        </section>
+
+        <section id="contact">
+            <form>
+                <input type="text" name="first-name" placeholder="First Name">
+                <input type="text" name="last-name" placeholder="Last Name">
+                <input type="email" name="email" placeholder="Email">
+                <textarea name="message" placeholder="Message"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>©2024 Jay Fitzgerald. All Rights Reserved.</p>
+        <p>Designed by <a href="https://github.com/regulating">Jay</a></p>
+    </footer>
+
 </body>
 </html>
