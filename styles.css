@@ -35,9 +35,13 @@ h1 {
     align-items: center;
 }
 
-h1 span {
-    display: block;
-}
+
+
+#typed-text {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
 
 .subtitle {
     font-size: 1.5em;
