@@ -276,9 +276,20 @@ section div {
     }
 
     .projects-container {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+      }
+      .project-card {
+        width: 100%;
+        box-sizing: border-box; 
+        padding: 125px 10px;
+      }
+
+    .projects-container {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
 
 footer {
     position: relative;
